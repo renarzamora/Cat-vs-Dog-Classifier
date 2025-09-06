@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pth
+*.pt
+.venv/
+env/
+venv/
+data/
+make_demo.sh
