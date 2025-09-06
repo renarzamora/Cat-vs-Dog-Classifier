@@ -13,7 +13,6 @@ Train a **simple CNN** and display an interactive demo to predict whether an ima
 ![demo](docs/demo.gif)
 
 ---
-
 ## 📂 Project structure
 cat-dog-classifier/
 ├── app.py          # Streamlit Interface
@@ -24,7 +23,6 @@ cat-dog-classifier/
 ├── requirements.txt # Dependencies
 ├── README.md
 └── model/          # Saved weights (cat_dog_cnn.pth)
-
 ---
 
 📊 Dataset
@@ -40,7 +38,6 @@ data/
 └── val/
     ├── Cats/
     └── Dogs/
-
 ---
 
 In my case I downloaded all the images to train/, and used split_val.py to move the 20% to the val/ folder:
