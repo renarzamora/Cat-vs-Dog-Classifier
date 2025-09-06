@@ -12,8 +12,8 @@ Train a **simple CNN** and display an interactive demo to predict whether an ima
 
 ![demo](docs/demo.gif)
 
----
 ## 📂 Project structure
+```
 cat-dog-classifier/
 ├── app.py          # Streamlit Interface
 ├── model.py        # CNN Definition
@@ -23,14 +23,14 @@ cat-dog-classifier/
 ├── requirements.txt # Dependencies
 ├── README.md
 └── model/          # Saved weights (cat_dog_cnn.pth)
----
+```
 
 📊 Dataset
 
 Use [the Dogs vs. Cats dataset from Kaggle.](https://www.kaggle.com/c/dogs-vs-cats/data)
 
 Organize it like this:
-
+```
 data/
 ├── train/
 │   ├── Cats/
@@ -38,6 +38,7 @@ data/
 └── val/
     ├── Cats/
     └── Dogs/
+```
 ---
 
 In my case I downloaded all the images to train/, and used split_val.py to move the 20% to the val/ folder:
