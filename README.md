@@ -16,14 +16,14 @@ Train a **simple CNN** and display an interactive demo to predict whether an ima
 
 ## 📂 Project structure
 cat-dog-classifier/
-├── app.py # Interfaz Streamlit
-├── model.py # Definición de la CNN
-├── train.py # Entrenamiento del modelo
-├── predict.py # Predicciones con el modelo
-├── split_val.py # Divide train/val
-├── requirements.txt # Dependencias
+├── app.py          # Streamlit Interface
+├── model.py        # CNN Definition
+├── train.py        # Model training
+├── predict.py      # Predictions
+├── split_val.py    # Split train/val
+├── requirements.txt # Dependencies
 ├── README.md
-└── model/ # Pesos guardados (cat_dog_cnn.pth)
+└── model/          # Saved weights (cat_dog_cnn.pth)
 
 ---
 
