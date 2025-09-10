@@ -9,8 +9,7 @@ Train a **simple CNN** and display an interactive demo to predict whether an ima
 ---
 
 ## 🚀 Demo
-
-![demo](docs/demo.gif)
+watch it here: https://www.youtube.com/watch?v=a9pkALUoO_g
 
 ## 📂 Project structure
 ```
@@ -39,47 +38,38 @@ data/
     ├── Cats/
     └── Dogs/
 ```
----
 
 In my case I downloaded all the images to train/, and used split_val.py to move the 20% to the val/ folder:
 
 python split_val.py
 
----
 
-🏋️‍♂️ Training
+## 🏋️‍♂️ Training
 
 Run:
 python train.py
 
----
 
 This trains the model and saves the weights to:
 ./model/cat_dog_cnn.pth
 
-Prediction
+## Prediction
 Example from Python:
 
 from predict import predict_image
 label, prob = predict_image("example.jpg")
 print(label, prob)
 
----
-
-🌐 Web interface (Streamlit)
+## 🌐 Web interface (Streamlit)
 
 Run:
 streamlit run app.py
 
----
-
-📈 Results
+## 📈 Results
 
 With 5 training epochs, the model achieves approximately 79% accuracy in validation.
 
----
-
-🛠️ Technologies used
+## 🛠️ Technologies used
 
 PyTorch
 
@@ -89,16 +79,10 @@ Streamlit
 
 Pillow
 
----
-
-Licence MIT
-
-
----
+## Licence MIT
 
 # 📄 app.py
 
-```python
 import streamlit as st
 import os
 from predict import predict_image
@@ -125,9 +109,7 @@ if uploaded_file is not None:
     else:
         label, prob = predict_image(temp_path, model_path = model_path)
         st.success(f"Prediction: **{label}** (Confidence: {prob:.2f})")
-
-
----
+´´´
 
 ## 🚀 Demo
 
